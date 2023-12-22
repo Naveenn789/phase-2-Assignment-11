@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="WebAppServersDb.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="OurStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style4 {
+            width: 514px;
+        }
+        .auto-style5 {
+            width: 319px;
+        }
+        .auto-style6 {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <table class="auto-style1">
+                <tr>
+                    <td><h1>Article</h1></td>
+                </tr>
+            </table>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style4">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    </td>
+                    <td class="auto-style6">
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Article.aspx">Articles</asp:HyperLink>
+                    </td>
+                    <td class="auto-style6">
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="menu">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

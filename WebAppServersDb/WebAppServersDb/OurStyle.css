@@ -1,0 +1,31 @@
+﻿
+body {
+    background-color: lightgray;
+}
+
+.header {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    height: 20%;
+    width: 80;
+    background-color: paleturquoise;
+    color: black;
+}
+
+.menu {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    height: 70%;
+    width: 80;
+    background-color: burlywood;
+    color: black;
+}
+h1, h2 
+{
+    text-align: center;
+    text-decoration: double;
+}
